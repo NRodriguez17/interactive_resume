@@ -23,8 +23,7 @@ class ApplicationController < Sinatra::Base
   @basicinfo = BasicInfo.new(params[:firstname], params[:lastname], params[:image], params[:phonenumber], params[:email])
   @education = Education.new(params[:school], params[:graduationyear], params[:gpa])
   @extracurriculars = Extracurriculars.new(params[:extracurricular1], params[:description1], params[:extracurricular2], params[:description2], params[:extracurricular3], params[:description3])
-  # @volunteerexperience
-  # @workexperience
+  @volunteerworkexperience = Volunteerworkexperience.new(params[])
   # @awards
   # @skills
  
