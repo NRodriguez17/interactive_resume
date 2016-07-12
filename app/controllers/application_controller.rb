@@ -19,9 +19,13 @@ class ApplicationController < Sinatra::Base
 
   post '/final' do
   @basicinfo = BasicInfo.new(params[:firstname], params[:lastname], params[:image], params[:phonenumber], params[:email])
-  @school = (params[:school])
-  @graduationyear = (params[:graduationyear])
-  @gpa = (params[:gpa])
+  @education = Education.new(params[:school], params[:graduationyear], params[:gpa])
+  @extracurriculars = Extracurriculars.new(params[:extracurricular1], params[:description1], params[:extracurricular2], params[:description2], params[:extracurricular3], params[:description3])
+  @volunteerexperience
+  @workexperience
+  @awards
+  @skills
+ 
   erb :final
 end
 
