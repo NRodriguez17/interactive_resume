@@ -22,9 +22,9 @@ class ApplicationController < Sinatra::Base
   post '/final' do
   @basicinfo = BasicInfo.new(params[:firstname], params[:lastname], params[:image], params[:phonenumber], params[:email])
   @education = Education.new(params[:school], params[:graduationyear], params[:gpa])
-  @extracurriculars = Extracurriculars.new(params[:extracurricular1], params[:description1], params[:extracurricular2], params[:description2], params[:extracurricular3], params[:description3])
-  @volunteerworkexperience = Volunteerworkexperience.new(params[])
-  # @awards
+  @extracurriculars = Extracurriculars.new(params[:extracurricular1], params[:dates1], params[:description1], params[:description2], params[:extracurricular2], params[:dates2], params[:description3], params[:description4], params[:extracurricular3], params[:dates3], params[:description5], params[:description6])
+  @volunteerworkexperience = Volunteerworkexperience.new(params[:experience1], params[:dates11], params[:description11], params[:description21], params[:experience2], params[:dates21], params[:description31], params[:description41], params[:experience3], params[:dates31], params[:description51], params[:description61])
+  @awards = Awards.new(params[:award1, :award2, :award3])
   # @skills
  
   erb :final
