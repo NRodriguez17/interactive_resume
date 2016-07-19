@@ -1,11 +1,9 @@
 body {
   background-color: white;
-  font-family: 'Arial', sans-serif;
+  font-family: 'Gudea', sans-serif;
+  margin: 5% 10% 5% 10%;
 }
 
-.all-header {
-  margin: 5% 15% 5% 15%;
-}
 .name {
   color: #99132A;
   display: inline-block;
@@ -43,4 +41,71 @@ body {
 .header-text {
   padding-top: 9px;
   float: left;
+}
+
+/* education */
+
+.category-headers {
+  color: #99132A;
+  font-size: .9em;
+  letter-spacing: 2px;
+  margin-top: 5em;
+  margin-bottom: .5em;
+  text-transform: uppercase;
+}
+
+.category-details {
+  color: #808284;
+  font-size: .9em;
+  font-style: italic;
+  line-height: 1.4em;
+  margin-bottom: 1%;
+  margin-left: 2%;
+  margin-top: .5em;
+}
+
+.category-description-main {
+  color: #808284;
+  font-size: .9em;
+  line-height: 1.4em;
+  margin-bottom: 1%;
+  margin-left: 2%;
+  margin-right: 7%;
+  margin-top: .5em;
+}
+
+.category-description {
+  color: #424242;
+  font-size: .9em;
+  line-height: 1.4em;
+  margin-bottom: 1%;
+  margin-left: 2%;
+  margin-right: 7%;
+  margin-top: .01em;
+}
+
+.primary-titles {
+  color: #99132A;
+  display: inline-block;
+  font-size: .9em;
+  letter-spacing: 1px;
+  margin-bottom: -1%;
+  text-decoration: none;
+}
+
+.location {
+  color: #424242;
+  display: inline-block;
+  font-size: .8em;
+  letter-spacing: 2px;
+  margin-bottom: -1%;
+  margin-top: 1em;
+  padding-left: .4em;
+  text-transform: uppercase;
+}
+
+hr {
+  border: 1px dotted #A7A9AB;
+  border-style: none none dotted; 
+  margin: 0 10% 0 0;
 }
