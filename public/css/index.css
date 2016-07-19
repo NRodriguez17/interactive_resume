@@ -1,0 +1,46 @@
+body {
+  background-color: white;
+  font-family: 'Gudea', sans-serif;
+}
+
+.all-header {
+  margin: 5% 15% 5% 15%;
+}
+.name {
+  color: #99132A;
+  display: inline-block;
+  font-size: 2.4em;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.contact-information {
+  color: #424242;
+  display: inline-block;
+  font-size: .8em;
+  letter-spacing: 1px;
+  line-height: .9em;
+  text-transform: uppercase;
+}
+
+.contact-deets {
+  display: inline-block;
+  margin-bottom: 2%;
+  text-decoration: none;
+}
+.header-prof {
+  display: inline-block;
+  float: left;
+  padding-left: 15px;
+ }
+
+.profile {
+  border-radius: 50%;
+  height: 75px;
+  width: 75px;
+}
+
+.header-text {
+  padding-top: 9px;
+  float: left;
+}

@@ -6,24 +6,23 @@
   <link rel="stylesheet" href="/css/index.css" >
 </head>
 <body> 
-
-  <div class="homepage">
-    <h1>  
-       <%= @basicinfo.firstname %> <%= @basicinfo.lastname %> <br>
-    </h1>
-    <img src="<%= @basicinfo.image %>" height="42" width="50"> <br>
-    <%= @basicinfo.phonenumber %> <br>
-    <%= @basicinfo.email %> <br> <hr>
-    <h1>
-        Education
-    </h1>
-    <%= @school %> <br>
-    <%= @graduationyear %> <br>
-    <%= @gpa %> <br>
-    
+  <div class="all-header">
+    <div class="header-text">
+    <header class="header-details">
+      <h1 class="name"><%= @basicinfo.firstname %> <%= @basicinfo.lastname %> | </h1>
+        <article class="contact-information">
+          <p class="contact-deets">ph: <%= @basicinfo.phonenumber %> | </p>
+          <p class="contact-deets">e: <%= @basicinfo.email %></p>
+        </article>
+    </header>
+    </div>
+    <div class="header-prof">
+      <img src="<%= @basicinfo.image %>" class="profile">
+    </div>
   </div>
+
+
+
 
 </body>
 </html>
-
-
