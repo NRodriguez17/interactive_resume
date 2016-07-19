@@ -19,6 +19,26 @@
     <div class="header-prof">
       <img src="<%= @basicinfo.image %>" class="profile">
     </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+  </div>
+  <div class="ed">
+    <section class="content">
+    <h2 class="category-headers">Education</h2><hr>
+      <p class="primary-titles"><strong><%= @education.school.upcase %></strong> | <span class="location">PHOENIX, AZ</span></p>
+      <p class="category-details">Graduation Year: <%= @education.graduationyear %><br>GPA: <%= @education.gpa %></p>
+
+   <h2 class="category-headers">Extracurriculars</h2><hr>
+      <p class="primary-titles"><strong><%= @extracurriculars.extracurricular1.upcase %></strong> | <span class="location">PHOENIX, AZ</span></p>
+        <p class="category-details">Vice President<br><%= @extracurriculars.dates1 %></p>
+        <p class="category-description">&bull; <%= @extracurriculars.description1 %>.</p>
+        <p class="category-description">&bull; <%= @extracurriculars.description2 %>.</p>
+      
+
+    </section>
   </div>
 
 
